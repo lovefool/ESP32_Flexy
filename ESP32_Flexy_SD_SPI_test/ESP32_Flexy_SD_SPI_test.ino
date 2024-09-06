@@ -57,6 +57,11 @@ void setup() {
     }
     writeFile(SD, "/hello.txt", "hello ");
     appendFile(SD, "/hello.txt", "World!\n");
+
+    /* ファイルが存在しないときのappendテスト */
+    appendFile(SD, "/sd_log.txt", "hello ");
+    appendFile(SD, "/sd_log.txt", "World!\n");
+
 }
 
 void loop() {
